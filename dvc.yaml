@@ -51,4 +51,4 @@ stages:
     cmd: python src/model/model_register.py
     deps:
     - reports/experiment_info.json
-    - src/model/register_model.py
+    - src/model/model_register.py
