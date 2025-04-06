@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 
 RUN python -m nltk.downloader stopwords wordnet
 
-EXPOSE 5000
+EXPOSE 5001
 
 #local
 CMD ["python", "app.py"]  
