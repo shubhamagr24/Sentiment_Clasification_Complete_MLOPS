@@ -177,3 +177,6 @@ cython_debug/
 cred.txt
 /data
 /models
+
+reports/experiment_info.json
+reports/metrics.json
