@@ -27,7 +27,7 @@ repo_owner = "shubhamagr24"
 repo_name = "Sentiment_Clasification_Complete_MLOPS"
 # Set up MLflow tracking URI
 mlflow.set_tracking_uri(f'{dagshub_url}/{repo_owner}/{repo_name}.mlflow')
-# -------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------
 
 
 # Below code block is for local use
