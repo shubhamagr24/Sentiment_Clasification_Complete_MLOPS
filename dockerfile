@@ -10,10 +10,16 @@ RUN pip install -r requirements.txt
 
 RUN python -m nltk.downloader stopwords wordnet
 
-EXPOSE 5001
+# local
+# EXPOSE 5001
+
+
+#prod
+EXPOSE 5000
+
 
 #local
-CMD ["python", "app.py"]  
+# CMD ["python", "app.py"]  
 
 #Prod
-# CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "120", "app:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "120", "app:app"]
